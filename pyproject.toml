@@ -1,0 +1,21 @@
+
+[build-system]
+requires = ["setuptools >= 61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fhnw-spectro"
+version = "0.1.0"
+
+dependencies = [
+    "numpy",
+    "matplotlib",
+    "scipy",
+    "pandas",
+    "scikit-image",
+    "opencv-contrib-python-headless",
+    "flask",
+]
+
+[project.scripts]
+server = "spectro.server:main"
